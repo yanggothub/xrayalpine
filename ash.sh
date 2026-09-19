@@ -161,11 +161,11 @@ cat > "$CONFIG" <<EOF2
       "settings": {
         "clients": [
           {
-            "id": "ea69b11b-4db6-427e-ab0e-6eb10d528244",
+            "id": "ec69b11b-4db6-427e-ab0e-6eb10d528244",
             "flow": "xtls-rprx-vision"
           }
         ],
-        "decryption": "mlkem768x25519plus.native.600s.VHDZsT7dwE2Z8RnfPD2mWYkuHcXokLIrjkdCriPz1hXmiWIVrN1K2HNyiW0nnRFaAG_KFQiDn-j5_28iHCnVJv"
+        "decryption": "mlkem768x25519plus.native.600s.VHDZsT7dwE2Z8RnfPD2mWYkuHcXokLIrjkdCriPz1hXmiWIVrN1K2HNyiW0nnRFaAG_KFQiDn-j5_28iHCnVJw"
       },
 
       "streamSettings": {
@@ -176,8 +176,8 @@ cat > "$CONFIG" <<EOF2
           "certificates": [
             {
               "ocspStapling": 3600,
-              "certificateFile": "/usr/local/etc/xray/abc-fullchain.cer",
-              "keyFile": "/usr/local/etc/xray/abc-private.key"
+              "certificateFile": "/usr/local/etc/xray/vtcdn-fullchain.cer",
+              "keyFile": "/usr/local/etc/xray/vtcdn-private.key"
             }
           ],
           "rejectUnknownSni": true,
@@ -322,13 +322,13 @@ echo "  /usr/local/etc/xray/"
 echo
 
 echo "需要上传："
-echo "  abc-fullchain.cer"
-echo "  abc-private.key"
+echo "  vtcdn-fullchain.cer"
+echo "  vtcdn-private.key"
 echo
 
 echo "例如："
-echo "  /usr/local/etc/xray/abc-fullchain.cer"
-echo "  /usr/local/etc/xray/abc-private.key"
+echo "  /usr/local/etc/xray/vtcdn-fullchain.cer"
+echo "  /usr/local/etc/xray/vtcdn-private.key"
 echo
 
 echo "=============================================="
@@ -368,4 +368,3 @@ echo "=============================================="
 echo " 注意：本脚本不会检查证书，也不会启动 Xray"
 echo "=============================================="
 echo
-
