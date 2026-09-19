@@ -318,17 +318,17 @@ echo "=============================================="
 echo
 
 echo "证书目录："
-echo "  /usr/local/etc/xray/xsh/"
+echo "  /usr/local/etc/xray/"
 echo
 
 echo "需要上传："
-echo "  vtcdn-fullchain.cer"
-echo "  vtcdn-private.key"
+echo "  abc-fullchain.cer"
+echo "  abc-private.key"
 echo
 
 echo "例如："
-echo "  /usr/local/etc/xray/xsh/vtcdn-fullchain.cer"
-echo "  /usr/local/etc/xray/xsh/vtcdn-private.key"
+echo "  /usr/local/etc/xray/abc-fullchain.cer"
+echo "  /usr/local/etc/xray/abc-private.key"
 echo
 
 echo "=============================================="
